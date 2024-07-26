@@ -71,7 +71,27 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
-
+/* Collage */ 
+.collage-container {
+	position: absolute; /* Position container absolutely */
+	right: 0; /* Align to the right side */
+	top: 0; /* Align to the top */
+	width: 50%; /* Adjust width as needed */
+	height: 100vh; /* Full height of the viewport */
+	overflow: hidden; /* Hide overflow if necessary */
+	display: flex; /* Use flexbox for alignment */
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	background: #f5f5f5; /* Optional: background color */
+  }
+  
+  /* Ensure the image scales properly */
+  .collage-image {
+	max-width: 100%; /* Scale image to fit within the container */
+	max-height: 100%; /* Scale image to fit within the container */
+	height: auto; /* Maintain aspect ratio */
+	border-radius: 4px; /* Optional: rounded corners */
+  }
 /* Basic */
 
 	@-ms-viewport {
@@ -8601,3 +8621,5 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+	
+		
